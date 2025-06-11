@@ -4,13 +4,14 @@ import kotlin.math.pow
 
 fun main (){
 
-    val p = 70000
-    val r = 0.167
-    val n = 1
-    val t = 20
+    val initialAmount = 70000
+    val interestRate = 0.167
+    val amountOfAccrualPerYear = 1
+    val numberOfYears = 20
 
-    val s = p * (1 + r/n).pow(t*n)
-    val result = "%.3f".format(s)
+    val totalAmount = initialAmount * (1 + interestRate / amountOfAccrualPerYear).pow(numberOfYears * amountOfAccrualPerYear)
+
+    val result = "%.3f".format(totalAmount)
 
     println(result)
 }
