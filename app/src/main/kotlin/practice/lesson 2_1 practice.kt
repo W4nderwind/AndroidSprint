@@ -2,9 +2,14 @@ package practice
 
 fun main (){
 
-    val a: Double = 4.0
-    val b = (3+4+3+5)/a
+    val numberOfStudents: Double = 4.0
+    val assessmentIvan = 3
+    val assessmentAnna = 4
+    val assessmentBogdan = 3
+    val assessmentKirill = 5
 
-    println(b)
+    val arithmeticMean = (assessmentIvan + assessmentAnna + assessmentBogdan + assessmentKirill) / numberOfStudents
+
+    println(arithmeticMean)
 
 }
