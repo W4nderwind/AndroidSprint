@@ -14,8 +14,4 @@ fun main(){
 
     val fullName22 = "$marriedSurname $name $patronymic, $age22"
     println(fullName22)
-
-//    println("$surname $name $patronymic, $age20")
-//
-//    println("$marriedSurname $name $patronymic, $age22")
 }
