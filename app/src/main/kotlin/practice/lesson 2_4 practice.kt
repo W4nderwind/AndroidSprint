@@ -10,8 +10,6 @@ fun main() {
 
     val crystalMiningBuff = (crystal * buffPercent).toInt()
     val ironMiningBuff = (iron * buffPercent).toInt()
-//    val crystalMiningBuff = (crystal * (buff / 100.0)).toInt()
-//    val ironMiningBuff = (iron * (buff / 100.0)).toInt()
 
     println(crystalMiningBuff)
     println(ironMiningBuff)
