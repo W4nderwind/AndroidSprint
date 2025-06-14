@@ -2,16 +2,15 @@ package practice
 
 fun main(){
 
-    val surname = "Андреева"
-    val marriedSurname = "Сидорова"
+    var surname = "Андреева"
     val name = "Татьяна"
     val patronymic = "Сергеевна"
-    val age20 = 20
-    val age22 = 22
+    var age = 20
 
-    val fullName20 = "$surname $name $patronymic, $age20"
-    println(fullName20)
+    println("$surname $name $patronymic, $age")
 
-    val fullName22 = "$marriedSurname $name $patronymic, $age22"
-    println(fullName22)
+    surname = "Сидоровна"
+    age = 22
+
+    println("$surname $name $patronymic, $age")
 }
