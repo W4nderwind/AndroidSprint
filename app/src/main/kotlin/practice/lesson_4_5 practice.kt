@@ -3,19 +3,19 @@ package practice
 fun main () {
 
     println("Наличие повреждений корпуса:")
-    val Damage = readln().toBoolean()
+    val damage = readln().toBoolean()
 
     println("Текущий состав экипажа:")
-    val NumberOfCrew = readln().toInt()
+    val numberOfCrew = readln().toInt()
 
     println("Количество ящиков с провизией на борту:")
-    val AmountOfProvisions = readln().toInt()
+    val amountOfProvisions = readln().toInt()
 
     println("Благоприятность метеоусловий:")
-    val Weather = readln().toBoolean()
+    val weather = readln().toBoolean()
 
-    val analysis = !Damage && NumberOfCrew in 35..70 && AmountOfProvisions > 50 && (Weather || !Weather)
-            ||NumberOfCrew == 70 && Weather == true && AmountOfProvisions >= 50
+    val analysis = !damage && numberOfCrew in 35..70 && amountOfProvisions > 50 && (weather || !weather)
+            ||numberOfCrew == 70 && weather == true && amountOfProvisions >= 50
 
     println("Корабль может отправиться в плавание: $analysis")
 }
