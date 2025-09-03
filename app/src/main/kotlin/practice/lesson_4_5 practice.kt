@@ -2,6 +2,8 @@ package practice
 
 fun main () {
 
+    val MinMaxCrew = 35.. 70
+
     println("Наличие повреждений корпуса:")
     val damage = readln().toBoolean()
 
@@ -14,8 +16,10 @@ fun main () {
     println("Благоприятность метеоусловий:")
     val weather = readln().toBoolean()
 
-    val analysis = !damage && numberOfCrew in 35..70 && amountOfProvisions > 50 && (weather || !weather)
-            ||numberOfCrew == 70 && weather == true && amountOfProvisions >= 50
+    val analysis = !damage && numberOfCrew in MinMaxCrew && amountOfProvisions > MIN_PROVISIONS && (weather || !weather)
+            ||numberOfCrew == ALTERNATIVE_CREW && weather == true && amountOfProvisions >= MIN_PROVISIONS
 
     println("Корабль может отправиться в плавание: $analysis")
 }
+const val ALTERNATIVE_CREW = 70
+const val MIN_PROVISIONS = 50
